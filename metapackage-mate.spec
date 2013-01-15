@@ -10,7 +10,7 @@ Summary:	MATE Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE z dodatkowymi pakietami
 Name:		metapackage-mate
 Version:	1.5
-Release:	0.4
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	mate-backgrounds >= %{version}
