@@ -1,8 +1,16 @@
+# MATE build order:
+# http://wiki.mate-desktop.org/building#building_order
+#
+# To see what is present in specific release,
+# see roadmap: http://wiki.mate-desktop.org/roadmap
+# And to look into future (what has less point of packaging as due being removed/deprecated):
+# http://wiki.mate-desktop.org/status:1.6
+#
 Summary:	MATE Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE z dodatkowymi pakietami
 Name:		metapackage-mate
-Version:	1.5.0
-Release:	0.2
+Version:	1.5
+Release:	0.4
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	mate-backgrounds >= %{version}
@@ -17,6 +25,8 @@ Requires:	mate-polkit >= %{version}
 Requires:	mate-session-manager >= %{version}
 Requires:	mate-settings-daemon >= %{version}
 Requires:	mate-window-manager >= %{version}
+Suggests:	mate-media >= %{version}
+Suggests:	mate-themes >= %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
