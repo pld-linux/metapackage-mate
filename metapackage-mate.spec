@@ -1,12 +1,10 @@
-# MATE build order:
-# http://wiki.mate-desktop.org/building#building_order
-#
-# To see what is present in specific release,
-# see roadmap: http://wiki.mate-desktop.org/roadmap
-# And to look into future (what has less point of packaging as due being removed/deprecated):
-# http://wiki.mate-desktop.org/status:1.6
-# also git page is helpful (obsolete junk under removed section):
-# http://git.mate-desktop.org/
+# NOTES:
+# - MATE build order: http://wiki.mate-desktop.org/building#building_order
+# - To see what is present in specific release, see roadmap: http://wiki.mate-desktop.org/roadmap
+# - To look into future (what has less point of packaging as due being removed/deprecated):
+#   http://wiki.mate-desktop.org/status:1.6
+# - git page is helpful (obsolete junk under removed section): # http://git.mate-desktop.org/
+# - plugins supported by community http://wiki.mate-desktop.org/plugins
 #
 Summary:	MATE Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE z dodatkowymi pakietami
