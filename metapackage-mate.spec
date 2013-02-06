@@ -27,6 +27,7 @@ Requires:	mate-settings-daemon >= %{version}
 Requires:	mate-window-manager >= %{version}
 Suggests:	mate-media >= %{version}
 Suggests:	mate-themes >= %{version}
+Suggests:	pulseaudio-alsa
 Suggests:	xscreensaver
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
