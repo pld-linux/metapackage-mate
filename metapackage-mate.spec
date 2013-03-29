@@ -5,16 +5,16 @@
 #   http://wiki.mate-desktop.org/status:1.6
 # - git page is helpful (obsolete junk under removed section): # http://git.mate-desktop.org/
 # - plugins supported by community http://wiki.mate-desktop.org/plugins
+# - OpenSUSE MATE page: http://en.opensuse.org/MATE_Desktop
 #
 Summary:	MATE Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE z dodatkowymi pakietami
 Name:		metapackage-mate
 Version:	1.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	mate-backgrounds >= %{version}
-Requires:	mate-conf >= 1.4
 Requires:	mate-control-center >= %{version}
 Requires:	mate-desktop >= %{version}
 Requires:	mate-file-manager >= %{version}
