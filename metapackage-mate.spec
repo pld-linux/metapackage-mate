@@ -7,14 +7,13 @@
 # - plugins supported by community http://wiki.mate-desktop.org/plugins
 # - OpenSUSE MATE page: http://en.opensuse.org/MATE_Desktop
 #
-Summary:	MATE Desktop Environment with additional packages
-Summary(pl.UTF-8):	Środowisko graficzne MATE z dodatkowymi pakietami
+Summary:	MATE Desktop Environment - core packages
+Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
 Version:	1.6
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-# core packages
 Requires:	mate-backgrounds >= %{version}
 Requires:	mate-control-center >= %{version}
 Requires:	mate-desktop >= %{version}
@@ -35,65 +34,81 @@ Requires:	mate-session-manager >= %{version}
 Requires:	mate-settings-daemon >= %{version}
 Requires:	mate-system-monitor >= %{version}
 Requires:	mate-window-manager >= %{version}
-# extras
-Suggests:	mate-applet-accessx-status >= %{version}
-Suggests:	mate-applet-battstat >= %{version}
-Suggests:	mate-applet-charpicker >= %{version}
-Suggests:	mate-applet-cpufreq >= %{version}
-Suggests:	mate-applet-drivemount >= %{version}
-Suggests:	mate-applet-geyes >= %{version}
-Suggests:	mate-applet-gweather >= %{version}
-Suggests:	mate-applet-indicator >= %{version}
-Suggests:	mate-applet-invest >= %{version}
-Suggests:	mate-applet-multiload >= %{version}
-Suggests:	mate-applet-netspeed >= %{version}
-Suggests:	mate-applet-sensors >= %{version}
-Suggests:	mate-applet-stickynotes >= %{version}
-Suggests:	mate-applet-trash >= %{version}
-Suggests:	mate-bluetooth >= %{version}
-Suggests:	mate-calc >= %{version}
-Suggests:	mate-character-map >= %{version}
-Suggests:	mate-document-viewer >= %{version}
-Suggests:	mate-file-manager-extension-atril >= %{version}
-Suggests:	mate-file-manager-extension-engrampa >= %{version}
-Suggests:	mate-file-manager-extension-gksu >= %{version}
-Suggests:	mate-file-manager-extension-image-converter >= %{version}
-Suggests:	mate-file-manager-extension-open-terminal >= %{version}
-Suggests:	mate-file-manager-extension-share >= %{version}
-Suggests:	mate-file-manager-extension-shares >= %{version}
-Suggests:	mate-file-manager-sento >= %{version}
-Suggests:	mate-file-manager-sento-bluetooth >= %{version}
-Suggests:	mate-file-manager-sento-burn >= %{version}
-Suggests:	mate-file-manager-sento-emailclient >= %{version}
-Suggests:	mate-file-manager-sento-gajim >= %{version}
-Suggests:	mate-file-manager-sento-pidgin >= %{version}
-Suggests:	mate-file-manager-sento-upnp >= %{version}
-Suggests:	mate-icon-theme-faenza >= %{version}
-Suggests:	mate-menu-editor >= %{version}
-Suggests:	mate-netbook >= %{version}
-Suggests:	mate-system-tools >= %{version}
-Suggests:	mate-terminal >= %{version}
-Suggests:	mate-text-editor >= %{version}
-Suggests:	mate-themes >= %{version}
-Suggests:	mate-user-share >= %{version}
-Suggests:	mate-utils >= %{version}
+Suggests:	%{name}-extras = %{version}-%{release}
 Suggests:	pulseaudio-alsa
 Suggests:	xscreensaver
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MATE Desktop Environment with additional packages (metapackage).
+MATE Desktop Environment (metapackage). This brings core MATE
+packages.
 
 MATE is a fork of GNOME 2. It provides an intuitive and attractive
 desktop to Linux users using traditional metaphors.
 
 %description -l pl.UTF-8
-Środowisko graficzne MATE z dodatkowymi pakietami (metapakiet).
+Środowisko graficzne MATE (metapakiet). Ten metapakiet obejmuje
+podstawowe pakiety MATE.
 
 MATE to odgałęzienie GNOME 2. Zapewnia intuicyjne i atrakcyjne
 środowisko graficzne dla użytkowników Linuksa przy użyciu tradycyjnych
 metafor.
+
+%package extras
+Summary:	MATE Desktop Environment - additional packages
+Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety opcjonalne
+Group:		X11/Applications
+Requires:	%{name} = %{version}-%{release}
+Requires:	mate-applet-accessx-status >= %{version}
+Requires:	mate-applet-battstat >= %{version}
+Requires:	mate-applet-charpicker >= %{version}
+Requires:	mate-applet-cpufreq >= %{version}
+Requires:	mate-applet-drivemount >= %{version}
+Requires:	mate-applet-geyes >= %{version}
+Requires:	mate-applet-gweather >= %{version}
+Requires:	mate-applet-indicator >= %{version}
+Requires:	mate-applet-invest >= %{version}
+Requires:	mate-applet-multiload >= %{version}
+Requires:	mate-applet-netspeed >= %{version}
+Requires:	mate-applet-sensors >= %{version}
+Requires:	mate-applet-stickynotes >= %{version}
+Requires:	mate-applet-trash >= %{version}
+Requires:	mate-bluetooth >= %{version}
+Requires:	mate-calc >= %{version}
+Requires:	mate-character-map >= %{version}
+Requires:	mate-document-viewer >= %{version}
+Requires:	mate-file-manager-extension-atril >= %{version}
+Requires:	mate-file-manager-extension-engrampa >= %{version}
+Requires:	mate-file-manager-extension-gksu >= %{version}
+Requires:	mate-file-manager-extension-image-converter >= %{version}
+Requires:	mate-file-manager-extension-open-terminal >= %{version}
+Requires:	mate-file-manager-extension-share >= %{version}
+Requires:	mate-file-manager-extension-shares >= %{version}
+Requires:	mate-file-manager-sento >= %{version}
+Requires:	mate-file-manager-sento-bluetooth >= %{version}
+Requires:	mate-file-manager-sento-burn >= %{version}
+Requires:	mate-file-manager-sento-emailclient >= %{version}
+Requires:	mate-file-manager-sento-gajim >= %{version}
+Requires:	mate-file-manager-sento-pidgin >= %{version}
+Requires:	mate-file-manager-sento-upnp >= %{version}
+Requires:	mate-icon-theme-faenza >= %{version}
+Requires:	mate-menu-editor >= %{version}
+Requires:	mate-netbook >= %{version}
+Requires:	mate-system-tools >= %{version}
+Requires:	mate-terminal >= %{version}
+Requires:	mate-text-editor >= %{version}
+Requires:	mate-themes >= %{version}
+Requires:	mate-user-share >= %{version}
+Requires:	mate-utils >= %{version}
+
+%description extras
+MATE Desktop Environment (metapackage). This brings additional MATE
+packages.
+
+%description extras -l pl.UTF-8
+Środowisko graficzne MATE (metapakiet). Ten metapakiet obejmuje
+dodatkowe, opcjonalne pakiety MATE.
 
 %prep
 
