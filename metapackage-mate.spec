@@ -11,7 +11,7 @@ Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
 Version:	1.6
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	mate-backgrounds >= %{version}
@@ -116,4 +116,7 @@ dodatkowe, opcjonalne pakiety MATE.
 rm -rf $RPM_BUILD_ROOT
 
 %files
+%defattr(644,root,root,755)
+
+%files extras
 %defattr(644,root,root,755)
