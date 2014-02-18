@@ -11,7 +11,7 @@ Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
 Version:	1.6
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	mate-backgrounds >= %{version}
@@ -85,13 +85,13 @@ Requires:	mate-file-manager-extension-image-converter >= %{version}
 Requires:	mate-file-manager-extension-open-terminal >= %{version}
 Requires:	mate-file-manager-extension-share >= %{version}
 Requires:	mate-file-manager-extension-shares >= %{version}
-Requires:	mate-file-manager-sento >= %{version}
-Requires:	mate-file-manager-sento-bluetooth >= %{version}
-Requires:	mate-file-manager-sento-burn >= %{version}
-Requires:	mate-file-manager-sento-emailclient >= %{version}
-Requires:	mate-file-manager-sento-gajim >= %{version}
-Requires:	mate-file-manager-sento-pidgin >= %{version}
-Requires:	mate-file-manager-sento-upnp >= %{version}
+Requires:	mate-file-manager-sendto >= %{version}
+Requires:	mate-file-manager-sendto-bluetooth >= %{version}
+Requires:	mate-file-manager-sendto-burn >= %{version}
+Requires:	mate-file-manager-sendto-emailclient >= %{version}
+Requires:	mate-file-manager-sendto-gajim >= %{version}
+Requires:	mate-file-manager-sendto-pidgin >= %{version}
+Requires:	mate-file-manager-sendto-upnp >= %{version}
 Requires:	mate-icon-theme-faenza >= %{version}
 Requires:	mate-menu-editor >= %{version}
 Requires:	mate-netbook >= %{version}
