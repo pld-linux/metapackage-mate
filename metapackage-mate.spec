@@ -10,19 +10,20 @@
 Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
-Version:	1.6
-Release:	4
+Version:	1.8
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
+Requires:	caja >= %{version}
+Requires:	engrampa >= %{version}
+Requires:	eom >= %{version}
+Requires:	gnome-keyring >= 3.0.0
+Requires:	marco >= %{version}
 Requires:	mate-backgrounds >= %{version}
 Requires:	mate-control-center >= %{version}
 Requires:	mate-desktop >= %{version}
 Requires:	mate-dialogs >= %{version}
-Requires:	mate-file-archiver >= %{version}
-Requires:	mate-file-manager >= %{version}
 Requires:	mate-icon-theme >= %{version}
-Requires:	mate-image-viewer >= %{version}
-Requires:	mate-keyring >= %{version}
 Requires:	mate-media >= %{version}
 Requires:	mate-menus >= %{version}
 Requires:	mate-notification-daemon >= %{version}
@@ -33,7 +34,6 @@ Requires:	mate-screensaver >= %{version}
 Requires:	mate-session-manager >= %{version}
 Requires:	mate-settings-daemon >= %{version}
 Requires:	mate-system-monitor >= %{version}
-Requires:	mate-window-manager >= %{version}
 Suggests:	%{name}-extras = %{version}-%{release}
 Suggests:	pulseaudio-alsa
 Suggests:	xscreensaver
@@ -60,9 +60,25 @@ Summary:	MATE Desktop Environment - additional packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety opcjonalne
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
+Requires:	atril >= %{version}
+Requires:	caja-extension-atril >= %{version}
+Requires:	caja-extension-engrampa >= %{version}
+Requires:	caja-extension-gksu >= %{version}
+Requires:	caja-extension-image-converter >= %{version}
+Requires:	caja-extension-open-terminal >= %{version}
+Requires:	caja-extension-sendto >= %{version}
+Requires:	caja-extension-sendto-bluetooth >= %{version}
+Requires:	caja-extension-sendto-burn >= %{version}
+Requires:	caja-extension-sendto-emailclient >= %{version}
+Requires:	caja-extension-sendto-gajim >= %{version}
+Requires:	caja-extension-sendto-pidgin >= %{version}
+Requires:	caja-extension-sendto-upnp >= %{version}
+Requires:	caja-extension-share >= %{version}
+Requires:	caja-extension-shares >= %{version}
 Requires:	mate-applet-accessx-status >= %{version}
 Requires:	mate-applet-battstat >= %{version}
 Requires:	mate-applet-charpicker >= %{version}
+Requires:	mate-applet-command >= %{version}
 Requires:	mate-applet-cpufreq >= %{version}
 Requires:	mate-applet-drivemount >= %{version}
 Requires:	mate-applet-geyes >= %{version}
@@ -73,34 +89,17 @@ Requires:	mate-applet-multiload >= %{version}
 Requires:	mate-applet-netspeed >= %{version}
 Requires:	mate-applet-sensors >= %{version}
 Requires:	mate-applet-stickynotes >= %{version}
+Requires:	mate-applet-timer >= %{version}
 Requires:	mate-applet-trash >= %{version}
-Requires:	mate-bluetooth >= %{version}
 Requires:	mate-calc >= %{version}
-Requires:	mate-character-map >= %{version}
-Requires:	mate-document-viewer >= %{version}
-Requires:	mate-file-manager-extension-atril >= %{version}
-Requires:	mate-file-manager-extension-engrampa >= %{version}
-Requires:	mate-file-manager-extension-gksu >= %{version}
-Requires:	mate-file-manager-extension-image-converter >= %{version}
-Requires:	mate-file-manager-extension-open-terminal >= %{version}
-Requires:	mate-file-manager-extension-share >= %{version}
-Requires:	mate-file-manager-extension-shares >= %{version}
-Requires:	mate-file-manager-sendto >= %{version}
-Requires:	mate-file-manager-sendto-bluetooth >= %{version}
-Requires:	mate-file-manager-sendto-burn >= %{version}
-Requires:	mate-file-manager-sendto-emailclient >= %{version}
-Requires:	mate-file-manager-sendto-gajim >= %{version}
-Requires:	mate-file-manager-sendto-pidgin >= %{version}
-Requires:	mate-file-manager-sendto-upnp >= %{version}
 Requires:	mate-icon-theme-faenza >= %{version}
-Requires:	mate-menu-editor >= %{version}
 Requires:	mate-netbook >= %{version}
 Requires:	mate-system-tools >= %{version}
 Requires:	mate-terminal >= %{version}
-Requires:	mate-text-editor >= %{version}
 Requires:	mate-themes >= %{version}
-Requires:	mate-user-share >= %{version}
 Requires:	mate-utils >= %{version}
+Requires:	mozo >= %{version}
+Requires:	pluma >= %{version}
 
 %description extras
 MATE Desktop Environment (metapackage). This brings additional MATE
