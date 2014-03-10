@@ -67,7 +67,6 @@ Requires:	caja-extension-gksu >= %{version}
 Requires:	caja-extension-image-converter >= %{version}
 Requires:	caja-extension-open-terminal >= %{version}
 Requires:	caja-extension-sendto >= %{version}
-Requires:	caja-extension-sendto-bluetooth >= %{version}
 Requires:	caja-extension-sendto-burn >= %{version}
 Requires:	caja-extension-sendto-emailclient >= %{version}
 Requires:	caja-extension-sendto-gajim >= %{version}
