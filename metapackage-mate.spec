@@ -11,7 +11,7 @@ Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
 Version:	1.8
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	caja >= %{version}
@@ -61,19 +61,6 @@ Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety opcjonalne
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	atril >= %{version}
-Requires:	caja-extension-atril >= %{version}
-Requires:	caja-extension-engrampa >= %{version}
-Requires:	caja-extension-gksu >= %{version}
-Requires:	caja-extension-image-converter >= %{version}
-Requires:	caja-extension-open-terminal >= %{version}
-Requires:	caja-extension-sendto >= %{version}
-Requires:	caja-extension-sendto-burn >= %{version}
-Requires:	caja-extension-sendto-emailclient >= %{version}
-Requires:	caja-extension-sendto-gajim >= %{version}
-Requires:	caja-extension-sendto-pidgin >= %{version}
-Requires:	caja-extension-sendto-upnp >= %{version}
-Requires:	caja-extension-share >= %{version}
-Requires:	caja-extension-shares >= %{version}
 Requires:	mate-applet-accessx-status >= %{version}
 Requires:	mate-applet-battstat >= %{version}
 Requires:	mate-applet-charpicker >= %{version}
