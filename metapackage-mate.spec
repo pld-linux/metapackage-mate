@@ -11,7 +11,7 @@ Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
 Version:	1.8
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	caja >= %{version}
@@ -80,6 +80,7 @@ Requires:	mate-applet-trash >= %{version}
 Requires:	mate-calc >= %{version}
 Requires:	mate-icon-theme-faenza >= %{version}
 Requires:	mate-netbook >= %{version}
+Requires:	mate-screenshot >= %{version}
 Requires:	mate-system-tools >= %{version}
 Requires:	mate-terminal >= %{version}
 Requires:	mate-themes >= %{version}
