@@ -10,8 +10,8 @@
 Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
-Version:	1.8
-Release:	3
+Version:	1.14
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	caja >= %{version}
@@ -22,7 +22,6 @@ Requires:	marco >= %{version}
 Requires:	mate-backgrounds >= %{version}
 Requires:	mate-control-center >= %{version}
 Requires:	mate-desktop >= %{version}
-Requires:	mate-dialogs >= %{version}
 Requires:	mate-icon-theme >= %{version}
 Requires:	mate-media >= %{version}
 Requires:	mate-menus >= %{version}
@@ -34,6 +33,7 @@ Requires:	mate-screensaver >= %{version}
 Requires:	mate-session-manager >= %{version}
 Requires:	mate-settings-daemon >= %{version}
 Requires:	mate-system-monitor >= %{version}
+Requires:	zenity
 Suggests:	%{name}-extras = %{version}-%{release}
 Suggests:	pulseaudio-alsa
 Suggests:	xscreensaver
@@ -77,7 +77,6 @@ Requires:	mate-applet-sensors >= %{version}
 Requires:	mate-applet-stickynotes >= %{version}
 Requires:	mate-applet-timer >= %{version}
 Requires:	mate-applet-trash >= %{version}
-Requires:	mate-calc >= %{version}
 Requires:	mate-icon-theme-faenza >= %{version}
 Requires:	mate-netbook >= %{version}
 Requires:	mate-screenshot >= %{version}
@@ -87,6 +86,7 @@ Requires:	mate-themes >= %{version}
 Requires:	mate-utils >= %{version}
 Requires:	mozo >= %{version}
 Requires:	pluma >= %{version}
+Suggests:	blueman
 
 %description extras
 MATE Desktop Environment (metapackage). This brings additional MATE
