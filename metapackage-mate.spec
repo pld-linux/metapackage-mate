@@ -80,7 +80,6 @@ Requires:	mate-applet-trash >= %{version}
 Requires:	mate-icon-theme-faenza >= %{version}
 Requires:	mate-netbook >= %{version}
 Requires:	mate-screenshot >= %{version}
-Requires:	mate-system-tools >= %{version}
 Requires:	mate-terminal >= %{version}
 Requires:	mate-themes >= %{version}
 Requires:	mate-utils >= %{version}
