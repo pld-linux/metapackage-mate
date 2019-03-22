@@ -11,7 +11,7 @@ Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
 Version:	1.22
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Requires:	caja >= %{version}
@@ -77,7 +77,6 @@ Requires:	mate-applet-sensors >= %{version}
 Requires:	mate-applet-stickynotes >= %{version}
 Requires:	mate-applet-timer >= %{version}
 Requires:	mate-applet-trash >= %{version}
-Requires:	mate-icon-theme-faenza >= %{version}
 Requires:	mate-netbook >= %{version}
 Requires:	mate-screenshot >= %{version}
 Requires:	mate-terminal >= %{version}
