@@ -10,7 +10,7 @@
 Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
-Version:	1.24
+Version:	1.26
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
@@ -33,6 +33,7 @@ Requires:	mate-screensaver >= %{version}
 Requires:	mate-session-manager >= %{version}
 Requires:	mate-settings-daemon >= %{version}
 Requires:	mate-system-monitor >= %{version}
+Requires:	mate-themes >= 3.22
 Requires:	zenity
 Suggests:	%{name}-extras = %{version}-%{release}
 Suggests:	pulseaudio-alsa
@@ -62,6 +63,7 @@ Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety opcjonalne
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	atril >= %{version}
+Requires:	caja-actions >= %{version}
 Requires:	mate-applet-accessx-status >= %{version}
 Requires:	mate-applet-battstat >= %{version}
 Requires:	mate-applet-charpicker >= %{version}
@@ -73,17 +75,19 @@ Requires:	mate-applet-gweather >= %{version}
 Requires:	mate-applet-indicator >= %{version}
 Requires:	mate-applet-multiload >= %{version}
 Requires:	mate-applet-netspeed >= %{version}
+Requires:	mate-applet-notification >= %{version}
 Requires:	mate-applet-sensors >= %{version}
 Requires:	mate-applet-stickynotes >= %{version}
 Requires:	mate-applet-timer >= %{version}
 Requires:	mate-applet-trash >= %{version}
+Requires:	mate-calc >= %{version}
 Requires:	mate-netbook >= %{version}
 Requires:	mate-screenshot >= %{version}
 Requires:	mate-terminal >= %{version}
-Requires:	mate-themes >= 3.22
 Requires:	mate-utils >= %{version}
 Requires:	mozo >= %{version}
 Requires:	pluma >= %{version}
+Requires:	pluma-plugins >= %{version}
 Suggests:	blueman
 
 %description extras
