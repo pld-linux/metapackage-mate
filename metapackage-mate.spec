@@ -10,7 +10,7 @@
 Summary:	MATE Desktop Environment - core packages
 Summary(pl.UTF-8):	Środowisko graficzne MATE - pakiety podstawowe
 Name:		metapackage-mate
-Version:	1.26
+Version:	1.28
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
